@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+select, input[type="number"], input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+select, input[type="number"] {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+select option {
+    color: #000;
+    background-color: #fff;
+}
+
+input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="submit"] {
+    background: #00c6ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #0072ff;
+    color: #fff;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #00c6ff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #0072ff;
+    color: #fff;
+}

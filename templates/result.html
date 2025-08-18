@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Buddy - Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+
+        {% if error %}
+            <div class="alert alert-error">❌ {{ error }}</div>
+            <br>
+            <a class="back-button" href="/">Back</a>
+        {% else %}
+            {% set label_map = {
+                'item': 'Item',
+                'order_qty': 'Quantity',
+                'unit': 'Unit',
+                'remaining': 'Remaining'
+            } %}
+            {% set preferred_order = ['item','order_qty','unit','remaining'] %}
+
+            <table>
+                {# First, render preferred keys that exist #}
+                {% for k in preferred_order if k in result %}
+                <tr>
+                    <th>{{ label_map.get(k, k|replace('_',' ')|title) }}</th>
+                    <td>{{ result[k] }}</td>
+                </tr>
+                {% endfor %}
+
+                {# Then, render any extra keys not in preferred_order #}
+                {% for k, v in result.items() if k not in preferred_order %}
+                <tr>
+                    <th>{{ label_map.get(k, k|replace('_',' ')|title) }}</th>
+                    <td>{{ v }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <br>
+            <a class="back-button" href="/">Back</a>
+        {% endif %}
+    </div>
+</body>
+</html>
