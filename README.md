@@ -82,6 +82,7 @@ This project is licensed under [MIT License](https://github.com/MariyaSha/Simple
 Created by **Mariya Sha** as part of a "Create Basic API" tutorial.  
 <br>
 Follow my tutorials and projects:
+<br>
 ⭐ [YouTube – Python Simplified](https://www.youtube.com/PythonSimplified) 
 <br>
 ⭐ [LinkedIn - Mariya Sha](https://www.linkedin.com/in/mariyasha888)
