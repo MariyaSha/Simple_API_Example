@@ -36,14 +36,14 @@ To interact with your API's backend Navigate to:
 localhost:8000/docs
 ```
 
-<img width="600" alt="FastAPI Swagger UI Backend Screenshot" src="https://github.com/user-attachments/assets/b9c19b23-4c3d-4697-a0cf-eb56a9603bac"/>
+<img width="600" alt="FastAPI Swagger UI Backend Screenshot" src="https://github.com/user-attachments/assets/bad37e97-96c9-4fdb-83e9-9a3e5cbc7b1f"/>
 
 Or navigate directly to an endpoint like: 
 ```
 http://127.0.0.1:8000/warehouse/tomatoes?order_qty=30
 ```
 
-<img width="600" alt="FastAPI Raw Endpoint Screenshot" src="https://github.com/user-attachments/assets/bad37e97-96c9-4fdb-83e9-9a3e5cbc7b1f"/>
+<img width="600" alt="FastAPI Raw Endpoint Screenshot" src="https://github.com/user-attachments/assets/25bde797-5465-4fc5-b414-f084b5e9eb43"/>
 
 5. While the server is running, you can use my custom client to interact with the server more conveniently.
 Open an additional instance of WSL (open another WSL terminal next to the existing one), activate environment, navigate to project folder, and run the client with:
@@ -61,7 +61,7 @@ localhost:8001
 
 <img width="600" alt="Custom Client Screenshot - Order Products" src="https://github.com/user-attachments/assets/33385e35-047d-48f6-a1e5-03bd7eb15251"/>
 <br>
-<img width="600" alt="Custom Client Screenshot - Shipping Confirmation" src="https://github.com/user-attachments/assets/8aad8ac6-8e96-4e41-b215-3e07fb74092b"/>
+<img width="600" alt="Custom Client Screenshot - Shipping Confirmation" src="https://github.com/user-attachments/assets/b9c19b23-4c3d-4697-a0cf-eb56a9603bac"/>
 
 7. Once you understand how the simple implemintation works, I highly recomend to check out `nj_advanced_server.py` to see a more professional approach (using pydantic).
 
