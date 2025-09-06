@@ -58,10 +58,9 @@ To interact with your client and server, navigate to:
 ```
 localhost:8001
 ```
-
-<img width="600" alt="Custom Client Screenshot - Order Products" src="https://github.com/user-attachments/assets/33385e35-047d-48f6-a1e5-03bd7eb15251"/>
+<img width="600" alt="Custom Client Screenshot - Order Products" src="https://github.com/user-attachments/assets/b9c19b23-4c3d-4697-a0cf-eb56a9603bac"/>
 <br>
-<img width="600" alt="Custom Client Screenshot - Shipping Confirmation" src="https://github.com/user-attachments/assets/b9c19b23-4c3d-4697-a0cf-eb56a9603bac"/>
+<img width="600" alt="Custom Client Screenshot - Shipping Confirmation" src="https://github.com/user-attachments/assets/33385e35-047d-48f6-a1e5-03bd7eb15251"/>
 
 7. Once you understand how the simple implemintation works, I highly recomend to check out `nj_advanced_server.py` to see a more professional approach (using pydantic).
 
@@ -83,7 +82,9 @@ This project is licensed under [MIT License](https://github.com/MariyaSha/Simple
 Created by **Mariya Sha** as part of a "Create Basic API" tutorial.  
 <br>
 Follow my tutorials and projects:
-- [YouTube – Python Simplified](https://www.youtube.com/PythonSimplified)  
-- [LinkedIn - Mariya Sha](https://www.linkedin.com/in/mariyasha888)
-- [X - Mariya Sha](https://x.com/MariyaSha888)
+⭐ [YouTube – Python Simplified](https://www.youtube.com/PythonSimplified) 
+<br>
+⭐ [LinkedIn - Mariya Sha](https://www.linkedin.com/in/mariyasha888)
+<br>
+⭐ [X - Mariya Sha](https://x.com/MariyaSha888)
 
