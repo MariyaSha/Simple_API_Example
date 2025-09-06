@@ -8,8 +8,8 @@
     <div class="container">
         <h1>API Buddy</h1>
         <form method="post">
-            <select name="item" required>
-                {% for name in items %}
+            <select name="product" required>
+                {% for name in products %}
                     <option value="{{ name }}">{{ name }}</option>
                 {% endfor %}
             </select>

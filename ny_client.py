@@ -25,18 +25,18 @@ def form(request: Request):
         "index.html", 
         {
             "request": request,
-            "items": ITEM_NAMES
+            "products": ITEM_NAMES
         }
     )
 
 @app.post("/", response_class=HTMLResponse)
 def send(
     request: Request, 
-    item: str = Form(...), 
+    product: str = Form(...), 
     order_qty: int = Form(...)
 ):
     r = requests.get(
-        f"{API_URL}/{item}", 
+        f"{API_URL}/{product}", 
         params={"order_qty": order_qty}
     )
     data = r.json()

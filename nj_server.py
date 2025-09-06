@@ -1,42 +1,36 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 
 catalog = {
-    "tomatoes":       {
-        "unit": "boxes",  
-        "qty": 1000
-    },
-    "wine": {
-        "unit": "bottles", 
-        "qty": 500
-    },
-    "corn": {
-        "unit": "bags", 
-        "qty": 5
-    },
-    "cranberries": {
-        "unit": "boxes", 
-        "qty": 5000
-    }
+	"tomatoes": {
+		"units": "boxes",
+		"qty": 1000
+	},
+	"wine": {
+		"units": "bottles",
+		"qty": 500
+	}
 }
 
-app = FastAPI(title = "New Jersey API")
+app = FastAPI( title = "New Jersey API Server")
 
-@app.get("/warehouse/{item}")
-async def load_truck(item, order_qty):
-    available = catalog[item]["qty"]
+@app.get("/warehouse/{product}")
+async def load_truck(product, order_qty):
 
-    if int(order_qty) > int(available):
-        print("raising exception...")
-        raise HTTPException(
-            status_code=400,
-            detail=f"Sorry, only {available} units are available, please try again…"
-        )
-    
-    catalog[item]["qty"] -= int(order_qty)
+	available = catalog[product]["qty"]
 
-    return {
-        "item": item,
-        "order_qty": order_qty, 
-        "unit": catalog[item]["unit"],
-        "remaining_qty": catalog[item]["qty"]
-    }
+	if int(order_qty) > int(available):
+		from fastapi import HTTPException
+		raise HTTPException(
+		    status_code=400,
+		    detail=f"Sorry, only {available} units are available, please try again…"
+		)
+
+	catalog[product]["qty"] -= int(order_qty)
+
+	return {
+		"product": product,
+		"order_qty": order_qty,
+		"units": catalog[product]["units"],
+		"remaining_qty": catalog[product]["qty"]
+	}
+

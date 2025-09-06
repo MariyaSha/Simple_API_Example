@@ -14,12 +14,12 @@
             <a class="back-button" href="/">Back</a>
         {% else %}
             {% set label_map = {
-                'item': 'Item',
+                'product': 'product',
                 'order_qty': 'Quantity',
                 'unit': 'Unit',
                 'remaining': 'Remaining'
             } %}
-            {% set preferred_order = ['item','order_qty','unit','remaining'] %}
+            {% set preferred_order = ['product','order_qty','unit','remaining'] %}
 
             <table>
                 {# First, render preferred keys that exist #}
