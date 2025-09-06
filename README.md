@@ -31,24 +31,29 @@ uvicorn nj_server:app --reload
 ```
 
 4. Your server will now be available on port 8000 in your browser. 
-<br>
-Navigate to `localhost:8000/docs` to interact with your API's backend.
-<br>
+To interact with your API's backend Navigate to: 
+```
+localhost:8000/docs
+```
+
 Or navigate directly to an endpoint like: 
-<br>
-`http://127.0.0.1:8000/warehouse/tomatoes?order_qty=30`
+```
+http://127.0.0.1:8000/warehouse/tomatoes?order_qty=30
+```
 
 5. While the server is running, you can use my custom client to interact with the server more conveniently.
-<br>
 Open an additional instance of WSL (open another WSL terminal next to the existing one), and run the client with:
-<br>
-`uvicorn ny_client:app --reload --port 8001`
+```
+uvicorn ny_client:app --reload --port 8001
+```
 
 6. Your client will now be available on port 8001 in your browser.
-<br>
-Navigate to `localhost:8001` to interact with your client and server.
+To interact with your client and server, navigate to:
+```
+localhost:8001
+```
 
-7. Once you understand how the simple implemintation works, I highly recomend to check out `nj_advanced_server.py` to see a more professional approach (using pydantic)
+7. Once you understand how the simple implemintation works, I highly recomend to check out `nj_advanced_server.py` to see a more professional approach (using pydantic).
 
 ## Dependencies 💻
 - **FastAPI** — for building the API.
@@ -61,7 +66,7 @@ Navigate to `localhost:8001` to interact with your client and server.
     
 ## License 📜
 
-This project is licensed under [MIT License](LICENSE). Feel free to use it for experimentation or learning.
+This project is licensed under [MIT License](https://github.com/MariyaSha/Simple_API_Example/blob/main/LICENSE.txt). Feel free to use it for experimentation or learning.
 
 ## Contact ☎️
 
