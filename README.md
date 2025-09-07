@@ -2,7 +2,7 @@
 A minimal example demonstrating how to build a simple API featuring a **server** and **client** using **FastAPI**, in the context of delivering goods from New Jersey to New York.
 
 ## Video Tutorial 🎥
-<a href="" target="_blank"><img width="600" alt="API with FastAPI thumbnail" src="https://github.com/user-attachments/assets/5ed594f6-943d-4700-aee8-b6861e9ec12e" /></a>
+<a href="https://youtu.be/dglcDIUTSsY" target="_blank"><img width="600" alt="API with FastAPI thumbnail" src="https://github.com/user-attachments/assets/5ed594f6-943d-4700-aee8-b6861e9ec12e" /></a>
 
 ## Overview 📚
 
